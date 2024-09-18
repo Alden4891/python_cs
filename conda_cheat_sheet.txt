@@ -1,0 +1,63 @@
+@echo off
+REM Conda Package Management Cheat Sheet
+
+REM ------------------------------
+REM 1. Installing a Package
+REM ------------------------------
+echo Installing numpy...
+conda install -y numpy
+
+echo Installing pandas version 1.3.3...
+conda install -y pandas=1.3.3
+
+REM ------------------------------
+REM 2. Installing Multiple Packages
+REM ------------------------------
+echo Installing matplotlib, seaborn, and scikit-learn...
+conda install -y matplotlib seaborn scikit-learn
+
+REM ------------------------------
+REM 3. Installing a Package from a Specific Channel
+REM ------------------------------
+echo Installing ydata-profiling from conda-forge channel...
+conda install -y -c conda-forge ydata-profiling
+
+REM ------------------------------
+REM 4. Installing from Anaconda Cloud
+REM ------------------------------
+echo Installing biopython from bioconda channel...
+conda install -y -c bioconda biopython
+
+REM ------------------------------
+REM 5. Installing Non-Python Packages
+REM ------------------------------
+echo Installing R essentials...
+conda install -y r-essentials
+
+echo Installing cmake...
+conda install -y cmake
+
+REM ------------------------------
+REM 6. Installing Packages from Pip in Conda Environment
+REM ------------------------------
+echo Installing some-package using pip...
+pip install some-package
+
+REM ------------------------------
+REM 7. Searching for Packages
+REM ------------------------------
+echo Searching for numpy...
+conda search numpy
+
+echo Searching for ydata-profiling in conda-forge channel...
+conda search -c conda-forge ydata-profiling
+
+REM ------------------------------
+REM 8. Updating a Package
+REM ------------------------------
+echo Updating numpy...
+conda update -y numpy
+
+REM Finished
+echo Conda package management tasks completed.
+pause
